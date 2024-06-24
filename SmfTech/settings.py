@@ -30,8 +30,10 @@ CSRF_TRUSTED_ORIGINS = [
     'https://ai-x-law.future-developers.cloud',
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 CORS_ALLOWED_ORIGINS = [
-    "*",
+    
 ]
 
 # Application definition
