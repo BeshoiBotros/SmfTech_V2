@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-dy(k#+(fi(%97se&eh%f3#!-09!_ggkz3(h5nouzaf(_+t++!a
 DEBUG = True
 
 ALLOWED_HOSTS = ['ai-x-law.future-developers.cloud', '127.0.0.1']
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://ai-x-law.future-developers.cloud',
+]
 
 # Application definition
 
