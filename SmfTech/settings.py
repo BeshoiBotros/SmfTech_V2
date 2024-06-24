@@ -30,6 +30,10 @@ CSRF_TRUSTED_ORIGINS = [
     'https://ai-x-law.future-developers.cloud',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "*",
+]
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'accounts',
     'rest_framework',
     'rest_framework_simplejwt',
