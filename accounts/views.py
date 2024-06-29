@@ -95,7 +95,7 @@ class ResetPasswordView(APIView):
 
         if reset_password_serializer.is_valid():
             email = reset_password_serializer.validated_data['email']
-            user = get_object_or_404(models.User, email=email)
+            # user = get_object_or_404(models.User, email=email)
             user: models.User|object = get_object_or_404(models.User, email=email)
             paylod = {
                 'user' : user.pk,
